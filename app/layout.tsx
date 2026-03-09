@@ -8,9 +8,6 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Uday Dhorajiya - Full Stack Developer",
-  description:
-    "Crafting exceptional digital experiences with modern web technologies. Full stack developer specializing in React, Next.js, and innovative user interfaces.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
@@ -19,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+    <html lang="en" className="dark overflow-hidden">
+      <body
+        className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased bg-black text-white min-h-screen overflow-hidden`}
+      >
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
