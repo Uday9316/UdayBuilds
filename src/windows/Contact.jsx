@@ -1,0 +1,38 @@
+import React from 'react'
+import WindowWrapper from '#hoc/WindowWrapper.jsx';
+import { socials } from '#constants';
+import WindowControls from '#components/WindowControls.jsx';
+
+const Contact = () => {
+  return ( 
+    <>
+    <div id='window-header'>
+        <WindowControls target='contact' />
+        <h2>Contact me</h2>
+    </div>
+    <div className='p-5 space-y-5'>
+        <img src='/images/uday.jpeg'
+         alt='uday' 
+         className='w-20 rounded-full' 
+        />
+        <h3>Let's connect</h3>
+        <p>Got idea? or gig? or just wanna talk? I'm here</p>
+        <p>udaydhorajiya@gmail.com</p>
+        <ul>
+            {socials.map(({id, icon, bg, link, text})=>(
+                <li key={id} style={{backgroundColor: bg}}>
+                    <a href={link} target='_blank' rel='noreferrer' title={text} >
+                        <img src={icon} alt={text} className='size-5'/>
+                        <p>{text}</p>
+                    </a>
+                </li>
+            ))}
+        </ul>
+
+    </div>
+    </>
+  )
+}
+
+const ContactWindow = WindowWrapper(Contact, 'contact');
+export default ContactWindow

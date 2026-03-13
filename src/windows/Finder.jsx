@@ -5,9 +5,20 @@ import WindowControls from '#components/WindowControls.jsx';
 import { locations } from '#constants';
 import useLocationStore from '#store/location.js';
 import clsx from 'clsx';
+import useWindowStore from '#store/window.js';
 
 const Finder = () => {
+const {openWindow} = useWindowStore();
 const {activeLocation, setActiveLocation} = useLocationStore();
+
+const openItem = (item) => {
+    if(item.fileType === "pdf") return openWindow("resume");
+    if(item.kind === "folder") return setActiveLocation(item);
+    if(['fig', 'url'].includes(item.fileType) && item.href) 
+        return window.open(item.href, '_blank');
+
+    openWindow(`${item.fileType}${item.kind}`, item);
+};
 
 const renderList = (items) => 
     items.map((item) => (
@@ -46,7 +57,20 @@ const renderList = (items) =>
                 </ul>
             </div>
         </div>
+        <ul className='content'>
+        {activeLocation?.children.map((item) => (
+            <li 
+            key={item.id} 
+            className={item.position} 
+            onClick={() =>
+            openItem(item)}>
+                <img src={item.icon} alt={item.name} />
+                <p>{item.name}</p>
+            </li>
+        ))}
+    </ul>
     </div>
+    
     </>
   );
 };
