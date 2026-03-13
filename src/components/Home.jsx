@@ -7,10 +7,10 @@ import useLocationStore from '#store/location.js';
 import useWindowStore from '#store/window.js';
 
 const projects = locations.work?.children ?? [];
+
 const Home = () => {
     const {setActiveLocation} = useLocationStore();
    const {openWindow} = useWindowStore();
-
    const handleOpenProjectFinder =(project) => {
     setActiveLocation(project);
     openWindow("finder");

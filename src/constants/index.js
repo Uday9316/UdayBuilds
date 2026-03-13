@@ -81,40 +81,40 @@ const navLinks = [
       title:
         "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
       image: "/images/blog1.png",
-      link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+      link: "",
     },
     {
       id: 2,
       date: "Aug 28, 2025",
       title: "The Ultimate Guide to Mastering Three.js for 3D Development",
       image: "/images/blog2.png",
-      link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+      link: "",
     },
     {
       id: 3,
       date: "Aug 15, 2025",
       title: "The Ultimate Guide to Mastering GSAP Animations",
       image: "/images/blog3.png",
-      link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+      link: "",
     },
   ];
   
   const techStack = [
     {
       category: "Frontend",
-      items: ["React.js", "Next.js", "TypeScript"],
+      items: ["React.js", "Next.js", "TypeScript", "Vue.js", "Nuxt.js", "Tailwind", "Three.js", "GSAP", "Shadcn/ui", "Solidity"],
     },
     {
       category: "Mobile",
-      items: ["React Native", "Expo"],
+      items: ["Java"],
     },
     {
       category: "Styling",
-      items: ["Tailwind CSS", "Sass", "CSS"],
+      items: ["Tailwind CSS", "CSS"],
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "NestJS", "Hono"],
+      items: ["Node.js", "Express"],
     },
     {
       category: "Database",
@@ -122,7 +122,7 @@ const navLinks = [
     },
     {
       category: "Dev Tools",
-      items: ["Git", "GitHub", "Docker"],
+      items: ["Git", "GitHub", "Docker", "Remix"],
     },
   ];
   
@@ -139,7 +139,7 @@ const navLinks = [
       text: "Platform",
       icon: "/icons/atom.svg",
       bg: "#4bcb63",
-      link: "https://udaybuilds.in/",
+      link: "https://calendly.com/udaydhorajiya5/30min",
     },
     {
       id: 3,
@@ -423,6 +423,103 @@ const navLinks = [
           },
         ],
       },
+
+      // ▶ Project 5
+      {
+        id: 9,
+        name: "TokenDropper",
+        icon: "/images/folder.png",
+        kind: "folder",
+        position: "top-60 left-80",
+        windowPosition: "top-[60vh] left-7",
+        children: [
+          {
+            id: 1,
+            name: "TokenDropper.txt",
+            icon: "/images/txt.png",
+            kind: "file",
+            fileType: "txt",
+            position: "top-5 left-10",
+            description: [
+              "TokenDropper is a fast, serverless token airdrop web app that lets you batch airdrop ERC tokens to many wallets in a single, optimized transaction flow.",
+              "It’s built with React and Vite for a minimal, high-performance frontend with hot module replacement and ESLint-enforced clean code.",
+              "The app uses libraries like Ethers.js or Viem to interact with EVM-compatible chains and is deployed serverlessly (e.g. Vercel/Netlify), so no dedicated backend is required.",
+              "This version is tailored for the Monad ecosystem, supporting gas-efficient batched airdrops to any number of wallets on the Monad chain.",
+            ],
+          },
+          {
+            id: 2,
+            name: "https://token-dropper.vercel.app/",
+            icon: "/images/safari.png",
+            kind: "file",
+            fileType: "url",
+            href: "https://token-dropper.vercel.app/",
+            position: "top-10 right-20",
+          },
+          {
+            id: 4,
+            name: "TokenDropper.png",
+            icon: "/images/image.png",
+            kind: "file",
+            fileType: "img",
+            position: "top-52 right-80",
+            imageUrl: "/images/project-5.png",
+          },
+          {
+            id: 5,
+            name: "Design.fig",
+            icon: "/images/plain.png",
+            kind: "file",
+            fileType: "fig",
+            href: "https://google.com",
+            position: "top-60 right-20",
+          },
+        ],
+      },
+
+      // ▶ Project 6
+      {
+        id: 10,
+        name: "Nad Court",
+        icon: "/images/folder.png",
+        kind: "folder",
+        position: "top-72 left-10",
+        windowPosition: "top-[75vh] left-7",
+        children: [
+          {
+            id: 1,
+            name: "Nad Court (Hackathon).txt",
+            icon: "/images/txt.png",
+            kind: "file",
+            fileType: "txt",
+            position: "top-5 left-10",
+            description: [
+              "Nad Court is a decentralized AI justice system built for the Moltiverse Hackathon, running a 3-tier hierarchical court where autonomous agents judge other agents.",
+              "The core innovation is using only a single AI call per case (around 5% AI, 95% Python logic), while all decisions and case outcomes are stored permanently on the Monad blockchain.",
+              "The system models Local, High, and Supreme Nad Courts with different juror counts, stake requirements, and thresholds, supported by Python agents for reporting, judging, jury voting, execution, and appeals.",
+              "The project includes an on-chain Monad smart contract, a Phoenix Wright-style gamified React frontend, and a full agent orchestration layer to simulate the entire justice pipeline end to end.",
+            ],
+          },
+          {
+            id: 2,
+            name: "Nad Court.png",
+            icon: "/images/image.png",
+            kind: "file",
+            fileType: "img",
+            position: "top-52 right-80",
+            imageUrl: "/images/project-6.png",
+          },
+          {
+            id: 3,
+            name: "Design.fig",
+            icon: "/images/plain.png",
+            kind: "file",
+            fileType: "fig",
+            href: "https://nad-court.vercel.app/",
+            position: "top-60 right-20",
+          },
+        ],
+      },
     ],
   };
   
@@ -440,7 +537,7 @@ const navLinks = [
         kind: "file",
         fileType: "img",
         position: "top-10 left-5",
-        imageUrl: "/images/adrian.jpg",
+        imageUrl: "/images/uday.jpeg",
       },
       {
         id: 2,
@@ -449,7 +546,7 @@ const navLinks = [
         kind: "file",
         fileType: "img",
         position: "top-28 right-72",
-        imageUrl: "/images/adrian-2.jpg",
+        imageUrl: "/images/uday.jpg",
       },
       {
         id: 3,
@@ -458,7 +555,7 @@ const navLinks = [
         kind: "file",
         fileType: "img",
         position: "top-52 left-80",
-        imageUrl: "/images/adrian-3.jpeg",
+        imageUrl: "/images/uday.jpeg",
       },
       {
         id: 4,
@@ -468,12 +565,12 @@ const navLinks = [
         fileType: "txt",
         position: "top-60 left-5",
         subtitle: "Meet the Developer Behind the Code",
-        image: "/images/adrian.jpg",
+        image: "/images/uday.jpeg",
         description: [
-          "Hey! I’m Adrian 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
-          "I specialize in JavaScript, React, and Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
-          "I’m big on clean UI, good UX, and writing code that doesn’t need a search party to debug.",
-          "Outside of dev work, you'll find me tweaking layouts at 2AM, sipping overpriced coffee, or impulse-buying gadgets I absolutely convinced myself I needed 😅",
+          "Hey! I’m Uday Dhorajiya 👋, a web developer who enjoys building sleek, interactive websites that actually work well.",
+          "I specialize in React, Vue, Solidityand Next.js—and I love making things feel smooth, fast, and just a little bit delightful.",
+          "big on clean UI, good UX.",
+          "Outside of dev work, you'll find me tweeting about web3 and nft's.",
         ],
       },
     ],

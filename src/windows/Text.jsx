@@ -1,10 +1,15 @@
 import WindowWrapper from "#hoc/WindowWrapper.jsx"
 import WindowControls from "#components/WindowControls.jsx"
 import useWindowStore from "#store/window.js"
+import { useGSAP } from '@gsap/react';
+import { Draggable } from 'gsap/Draggable';
 
 const Text = () => {
     const {windows} = useWindowStore();
     const data = windows.txtfile?.data;
+    useGSAP(() => {
+        Draggable.create(".folder")
+    }, []);
 
     if(!data) return null;
 
@@ -13,6 +18,7 @@ const Text = () => {
     <>
     <div id="window-header">
         <WindowControls target='txtfile' />
+        
         <h2>{name}</h2>
     </div>
     <div className="p-5 space-y-6 bg-white">
