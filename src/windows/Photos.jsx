@@ -20,7 +20,7 @@ const PhotosContent = () => {
     </div>
     <div className='flex w-full'>
         <div className='sidebar'>
-            <h2>My Photos</h2>
+            <h2>Photos</h2>
             <ul>
                 {photosLinks.map(({id, icon, title})=>(
                     <li key={id}>
