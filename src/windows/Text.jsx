@@ -12,7 +12,7 @@ const Text = () => {
   return (
     <>
     <div id="window-header">
-        <WindowControls target='textfile' />
+        <WindowControls target='txtfile' />
         <h2>{name}</h2>
     </div>
     <div className="p-5 space-y-6 bg-white">
@@ -35,5 +35,5 @@ const Text = () => {
   )
 }
 
-const TextWindow = WindowWrapper(Text, 'textfile');
+const TextWindow = WindowWrapper(Text, 'txtfile');
 export default TextWindow;

@@ -14,16 +14,15 @@ const WindowWrapper = (Component, windowKey) => {
         const ref = useRef(null);  
         
         useGSAP(() => {
-            const el=ref.current;
-            if(!el || !isOpen) return;
-            el.style.display ="black";
+            const el = ref.current;
+            if (!el || !isOpen) return;
+            el.style.display = "block";
 
-            gsap.fromTo(el,
-                {scale : 0.8, opacity: 0},
-                {scale : 1, opacity: 1, duration: 0.3, ease: "power3.out"},
-
+            gsap.fromTo(
+                el,
+                { scale: 0.8, opacity: 0 },
+                { scale: 1, opacity: 1, duration: 0.3, ease: "power3.out" },
             );
-
         }, [isOpen]);
 
         useGSAP(() => {
