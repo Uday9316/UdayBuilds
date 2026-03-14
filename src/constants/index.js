@@ -242,6 +242,9 @@ const navLinks = [
               "Lumi is a decentralized exchange that allows you to trade tokens with other users.",
               "It's built on EVM compatible chains like Ethereum, Polygon, Avalanche, etc.",
               "It's built with Js ensuring fast performance, responsive design, and a clean, premium look.",
+              "It has built in faucet which let's user claim faucet every 24 hours with back-end authentication.",
+              "It has discord bot working in back-end which is used to assign certain roles to users who mints nft.",
+
             ],
           },
           {
@@ -293,7 +296,7 @@ const navLinks = [
             description: [
               "Umi Launchpad is a web3 platform for launching NFT collections in a clean, guided way.",
               "Creators can configure and deploy ERC-721 / ERC-1155 collections without wrestling with low-level smart contract details.",
-              "It’s built with Vue 3, TypeScript, Tailwind CSS, and Vite, giving a fast DX and a smooth, responsive UI.",
+              "It’s built with Vue 3, TypeScript, Tailwind CSS, and Vite, giving a fast UX and a smooth, responsive UI.",
               "The focus is on a clear launch workflow, safe configuration, and a polished experience for both creators and collectors.",
             ],
           },
