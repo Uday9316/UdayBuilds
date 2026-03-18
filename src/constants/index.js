@@ -541,7 +541,7 @@ const navLinks = [
             fileType: "txt",
             position: "top-5 left-10",
             description: [
-              "Bera Gang is an NFT staking platform built on Berachain where users stake NFTs and earn rewards based on the amount (and/or tier) of NFTs staked.",
+              "Bera Gang is an NFT staking platform built on Berachain where users stake NFTs and earn rewards (calculated / distributed by on-chain smart contract) based on the amount (and/or tier) of NFTs staked.",
               "The reward engine calculates each staker’s share from staking weight over time, then distributes rewards through an on-chain smart contract for transparent, verifiable payouts.",
               "It supports deposit/withdraw flows, reward accrual, and claimable distributions, making it easy to manage long-term NFT staking incentives on Berachain.",
             ],
