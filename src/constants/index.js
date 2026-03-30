@@ -102,7 +102,7 @@ const navLinks = [
   const techStack = [
     {
       category: "Frontend",
-      items: ["React.js", "TypeScript", "Tailwind", "GSAP", "Shadcn/ui"],
+      items: ["React.js", "TypeScript", "Tailwind", "GSAP"],
     },
     {
       category: "Mobile",
