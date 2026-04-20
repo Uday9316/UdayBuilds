@@ -566,6 +566,40 @@ const navLinks = [
           },
         ],
       },
+
+      // ▶ Project 12
+      {
+        id: 12,
+        name: "Snapshot",
+        icon: "/images/folder.png",
+        kind: "folder",
+        position: "top-80 left-10",
+        windowPosition: "top-[22vh] left-[55vw]",
+        children: [
+          {
+            id: 1,
+            name: "Snapshot.txt",
+            icon: "/images/txt.png",
+            kind: "file",
+            fileType: "txt",
+            position: "top-5 left-10",
+            description: [
+              "Snapshot is a high-speed NFT snapshot tool that captures NFT holder states efficiently for reward, allowlist, and analytics workflows.",
+              "It uses Lens contracts to query and process NFT holder data with fast execution while preserving reliable on-chain indexing behavior.",
+              "The tool is optimized for rapid snapshot generation so communities can run campaigns and distributions with accurate holder records.",
+            ],
+          },
+          {
+            id: 2,
+            name: "Snapshot.com",
+            icon: "/images/safari.png",
+            kind: "file",
+            fileType: "url",
+            href: "https://snapshot.udaybuilds.in/",
+            position: "top-10 right-20",
+          },
+        ],
+      },
     ],
   };
   
