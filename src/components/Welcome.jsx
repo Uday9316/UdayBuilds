@@ -72,7 +72,7 @@ const Welcome = () => {
   return (
     <section id="welcome">
       <p ref={subtitleRef}>
-        {renderText("Hey, I'm Uday!", 'text-3xl font-georama', 100)}
+        {renderText("Rebranding .......", 'text-3xl font-georama', 100)}
       </p>
       <div className="small-screen">
         <p>This app is not available on mobile devices.</p>
